@@ -20,7 +20,7 @@ $moshomepage-warn: mat-palette($mat-red);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$moshomepage-theme: mat-light-theme((
+$moshomepage-theme: mat-dark-theme((
   color: (
     primary: $moshomepage-primary,
     accent: $moshomepage-accent,
@@ -37,17 +37,6 @@ $moshomepage-theme: mat-light-theme((
 
 * {
   box-sizing: border-box;
-}
-
-body {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-  background-color: black;
-  color: white;
 }
 
 html, body { height: 100%; }
