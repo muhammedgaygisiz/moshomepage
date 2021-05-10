@@ -32,4 +32,9 @@ describe('AppComponent', () => {
     const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('moshomepage app is running!');
   });
+
+  it('should match snapshot', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    expect(fixture).toMatchSnapshot();
+  });
 });
