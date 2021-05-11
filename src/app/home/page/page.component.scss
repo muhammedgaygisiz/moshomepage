@@ -22,8 +22,20 @@ $TABLET: 840px;
   min-width: 628px;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mat-typography {
+  padding: 120px;
+}
+
+.action-bar {
+  min-width: 100%;
+
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: $TABLET) {
