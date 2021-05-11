@@ -1,7 +1,33 @@
-.content {
+$TABLET: 840px;
+
+.content, .left-side-content, .right-side-content {
   min-height: 100%;
+}
+
+.content {
+  display: flex;
+}
+
+.left-side-content  {
+  flex-grow: 1;
+  min-width: 400px;
+
+  background: url("../../../assets/images/profilfoto.JPG") no-repeat top right;
+  opacity: 0.6;
+  background-size: cover;
+}
+
+.right-side-content {
+  flex-grow: 2;
+  min-width: 628px;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: $TABLET) {
+  .left-side-content {
+    display: none;
+  }
 }
